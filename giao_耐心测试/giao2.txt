@@ -1,0 +1,15 @@
+1:框架{
+一个标题<hx>or<p>
+两个button
+}
+2:css{
+body
+两个button设置（随便吧，往好看的设置）
+标题的居中（text-align : center)
+}
+3:js{
+1.获取相对量的高
+2.通过getElementsByTagName获取元素（“button")
+3.对获取的数组进行操作（1:鼠标擦过 2:点击事件）
+4.编写函数
+}
