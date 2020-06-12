@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      .box{
+        margin: 100px auto;
+        width: 220px;
+      }
+      li{
+        width: 55px;
+        height: 60px;
+        background: url(1.png) no-repeat;
+      }
+      .box li{
+        position: relative;
+          float: left;
+          width: 60px;
+          height: 75px;
+          background-color: #fff;
+          /* border: 1px solid #f4f4f4; */
+          margin: 1px 0 0 1px;
+        }
+        span{
+          position: absolute;
+          top: 53px;
+          left: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <li><span><strong>微信</strong></span></li>
+      <li><span><strong>运动</strong></span></li>
+      <li><span><strong>球球</strong></span></li>
+      <li><span><strong>f字</strong></span></li>
+      <li><span><strong>聊天</strong></span></li>
+      <li><span><strong>Q字</strong></span></li>
+    </div>
+    <script type="text/javascript">
+    var box = document.getElementsByClassName('box')
+    var lis = document.querySelectorAll('li')
+    for(var i = 0; i <= lis.length;i++){
+      var index = i * 102
+      lis[i].style.backgroundPosition = '0 -' + index + 'px'
+    }
+    </script>
+  </body>
+</html>
